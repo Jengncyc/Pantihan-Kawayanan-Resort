@@ -337,3 +337,41 @@ p{
 body.expanded {
   overflow: hidden;
 }
+
+@media(max-width: 999px){
+  .header-logo{
+      margin-top: -6px;
+      padding: 5px 1%;
+      transition: .2s;
+  }
+  .content{
+    left: 390%;
+    width: 100px;
+    perspective: 1500px;
+    position: relative;
+    top: 30%;
+    transform-style: preserve-3d;
+  }
+  .container {
+    top: 40%;
+    margin-left: 280px;
+    width: 400px;
+    height: 530px;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.349);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+h2 {
+    margin-top: -6px;
+    text-align: center;
+    color: #fff;
+}
+p{
+    color: white;
+    text-align: center;
+
+}
+}
