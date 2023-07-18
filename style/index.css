@@ -223,7 +223,53 @@ nav img{
 }
 
 
-@media(max-width: 999px){
+@media(max-width: 414px max-height: 896px){
+    .title h1{
+        font-size: 40px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #1b82e2 ;
+    }
+    .header1{
+        font-family:'Lucida Handwriting';
+        font-size: 10px;
+        color: none;
+        text-shadow: 
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0#ffffff,
+        1px 1px 0 #ffffff;
+    }
+    .cn{
+        font-size: 15px;
+        padding: 5px 35px;
+        top: 10%;   
+    }
+    .learn{
+        position: fixed;
+        width: 100%;
+        color: rgb(246, 237, 237);
+        top: 55%;
+        text-align: center;
+    }
+    nav img{
+        position: absolute;
+        margin: auto;
+        width: 150px;
+        top: 300%;
+        left: 40%;
+    }
+    .slidernav{
+        z-index: 888;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(80px);
+        margin-bottom: 12px;
+        margin-top: 20%;
+        max-width: 79%;
+    }
+    @media(max-width: 999px){
     .title h1{
         font-size: 40px;
         -webkit-text-stroke-width: 2px;
