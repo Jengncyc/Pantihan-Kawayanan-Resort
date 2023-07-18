@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pantihan Kawayanan Resort</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <script src="js/contact.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("K_zO6YzjwbKpOYpxH");
+      })();
+  </script>
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="box-area">
+        <header>
+            <img class="header-logo" src="img/logo.png">
+            <nav>
+                <div class="nav-link">
+                    <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li class="active"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    </div>
+          <div class="con">
+          <div class="left">
+                <div class="map">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.9999161094588!2d120.79591986461052!3d14.240568085791658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd86b6eb83b223%3A0x79d46c77ef15e1ce!2sPantihan%20Kawayanan%20Resort!5e1!3m2!1sen!2sph!4v1687144923229!5m2!1sen!2sph" width="350" height="440" style="border-radius: 5%;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+
+
+      <div class="contacttt">
+          <div class="container-contact border mt-3 bg-light">
+              <div class="row">
+                  <div class="col-md-6 p-5 bg-primary text-white"><br><br>
+                      <center><h1>FOR QUESTIONS</h1>
+                      <h4>Feel free to message here...</h4></center>
+                  </div>
+
+                  <div class="col-md-6 border-left py-3">
+                    <div class="form-group"><br>
+                        <h5 for="name">Name</h5>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name"/>
+                    </div>
+
+                    <div class="form-group"><br>
+                        <h5 for="email">Email</h5>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email"/>
+                    </div>
+
+                    <div class="form-group"><br>
+                        <center><h5 for="message">Type Your Message Here...</h5>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div><br>
+
+                    <center><button class="button" onclick="sendMail()">Submit</button></center>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+        <div class="right">
+              <div class="cardimage img"><br>
+                    <h1>For Reservation Enquiries</h1><br>
+                    <h5>Please Contact:</h5><br>
+                    <p>Ms. Jaquelyn Cabadin</p>
+                    <div class="tel">
+                        <a style="color: white;" href="tel:09952470064">0995-247-0064</a>
+                    </div>
+              </div>
+              <div class="cardimage img"><br>
+                    <h1>Payment Queries</h1><br><br>
+                    <h5>Please Contact:</h5><br>
+                    <p>Ms. Mary Jane Cabadin</p>
+                    <div class="tel">
+                        <a style="color: white;" href="tel:09954821761">0995-482-1761</a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="footer-box" id="contact">
+            <footer>
+                <h3>Visit Our Page:</h3>
+                  <div class="icons">
+                    <ul>
+                        <li>
+                            <a href="https://mail.google.com/mail/u/1/?dispatcher_command=master_lookup#inbox" target="_blank">
+                            <img src="img/ICONS/icon-gmail.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.facebook.com/pantihankawayananresort" target="_blank">
+                            <img src="img/ICONS/icon-fb.png">
+                            </a>
+                        </li>
+                      </ul>
+                  </div>
+              </footer>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-with, scale0.1">
+    <title>Pantihan Kawayanan Resort</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+
+</head>
+    <body>
+        <div class="box-area">
+            <header>
+                <nav>
+                        <a href="index.html"><img src="img/logo.png" class="back"></a>
+                    <div class="nav-link">
+                        <ul>
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li> 
+                        </ul>
+                    </div>
+                </nav> 
+            </header>
+        </div>
+
+        <section class="slider">
+            <img class="slidess active" src="img/index1.jpg" alt="">
+            <img class="slidess" src="img/index2.jpeg" alt="">
+            <img class="slidess" src="img/index3.jpg" alt="">
+            <img class="slidess" src="img/index4.jpg" alt="">
+            <img class="slidess" src="img/index5.jpeg" alt="">
+            
+            <div class="slidernav">
+                <div class="navbtn active"></div>
+                <div class="navbtn"></div>
+                <div class="navbtn"></div>
+                <div class="navbtn"></div>
+                <div class="navbtn"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="content-area">
+                <div class="title">
+                    <h1><b>PANTIHAN KAWAYANAN RESORT</b></h1>
+                    <h3 class=header1>A resort with majestic scenery, vibrant atmosphere and rich history.</h3>
+                </div>
+                <div class="learn">
+                    <button class="cn"><a href="vidday.html">WATCH</a></button>
+                    
+                </div>
+            </div>     
+        </section>
+
+        <div class="footer-box" id="contact">
+            <footer>
+                    <b class="address">Address: Pantihan 2, Maragondon, Philippines</b>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            const btns = document.querySelectorAll(".navbtn");
+            const slides = document.querySelectorAll(".slidess");
+            const text = document.querySelectorAll(".swiper");
+        
+        let currentIndex = 0;
+        let timer;
+        
+        const playSlider = () => {
+            timer = setInterval(() => {
+                nextSlide();
+            }, 3000);
+        };
+        
+        const stopSlider = () => {
+            clearInterval(timer);
+        };
+        
+        const nextSlide = () => {
+            currentIndex++;
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            updateSlider();
+        };
+        
+        const prevSlide = () => {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = slides.length - 1;
+            }
+            updateSlider();
+        };
+        
+        const updateSlider = () => {
+            slides.forEach((slide, index) => {
+                if (index === currentIndex) {
+                    slide.classList.add("active");
+                } else {
+                    slide.classList.remove("active");
+                }
+            });
+        
+            text.forEach((text, index) => {
+                if (index === currentIndex) {
+                    text.classList.add("active");
+                } else {
+                    text.classList.remove("active");
+                }
+            });
+        
+            btns.forEach((btn, index) => {
+                if (index === currentIndex) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+        };
+        
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                currentIndex = i;
+                updateSlider();
+                stopSlider();
+                playSlider();
+            });
+        });
+        
+        playSlider();
+        
+        </script>
+    </body>
+    </html>

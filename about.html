@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pantihan Kawayanan Resort</title>
+        <link rel="stylesheet" href="style/about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image/png" href="img/logo.png">
+    </head>
+    <body>
+        <div class="box-area">
+            <header>
+                <img class="header-logo" src="img/logo.png">
+                <nav>
+                    <div class="nav-link">
+                        <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="active"><a href="about.html">ABOUT US</a></li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav> 
+            </header>
+        </div>
+                
+                <div class="wrapper">
+                    <nav>
+                      <div class="items">
+                        <span class="item active" data-name="all">All</span>
+                        <span class="item" data-name="history">HISTORY</span>
+                        <span class="item" data-name="entrance fee">ENTRANCE FEE</span>
+                        <span class="item" data-name="room and cottages">ROOM AND COTTAGES</span>
+                        <span class="item" data-name="glamping and corkage">GLAMPING AND CORKAGE</span>
+                      </div>
+                    </nav>
+                    
+                    <div class="gallery">
+                        <div class="gallery-container">
+                            <div class="image" ><span><img src="img/about pic/pic1.jpg" alt="Image 1" onclick="expandImage(this)" ></span></div>
+                            <div class="image" ><span><img src="img/about pic/pic2.jpg" alt="Image 2" onclick="expandImage(this)" ></span></div>
+                            <div class="image" ><span><img src="img/about pic/pic3.jpg" alt="Image 3" onclick="expandImage(this)"></span></div>
+                            <div class="image" ><span><img src="img/about pic/pic4.jpg" alt="Image 4" onclick="expandImage(this)"></span></div>
+                        </div>
+                        <div class="gallery-container">
+                            <div class="image" ><span><img src="img/about pic/pic5.jpg" alt="Image 5" onclick="expandImage(this)"></span></div>
+                            <div class="image" ><span><img src="img/about pic/pic6.jpg" alt="Image 6" onclick="expandImage(this)"></span></div>
+                            <div class="image" ><span><img src="img/about pic/pic7.jpg" alt="Image 7" onclick="expandImage(this)">></span></div>
+                            <div class="image" ><span><img src="img/about pic/pic8.jpg" alt="Image 8" onclick="expandImage(this)">></span></div>
+                        </div>
+                    </div>
+
+                    <div id="overlay" onclick="shrinkImage()">
+                        <img id="expandedImage" src="" alt="Expanded Image">
+                    </div>
+                    
+
+                    <div class="gallery">
+
+                        
+                        <div class="image" data-name="history">
+                            <div class="history">
+                                <div class="resort"><h1>HISTORY OF PANTIHAN KAWAYANAN RESORT </h1></div>
+                                    <div class="box">
+                                    <center><p><b> The Cabadin family makes their living by cultivating bamboo, which once covered much of the area around the Pantihan Kawayanan resort. The name "Pantihan Kawayanan Resort" derives from the fact that the vehicle that can be seen in front of it or in the emblem is the first jeep in the entire pantihan to be laden with bamboos.</b></p></center>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                    
+                    
+                        <div class="image" data-name="entrance fee">
+                            <div class="resort"> <h1>ENTRANCE FEE</h1>
+                                <p>"Minimum Php 3,000.00 good for 10 persons(or less than 10) cottage and entrance include."</p>
+                            </div>
+                            <br><br><br>
+                            <div class="Coffee2">
+                                <div class="box1">
+                                    <img class="iconp" src="img/daytime.png" alt="Coffee2" style="width: 150px;">
+                                    <h2><b>DAYTIME</b></h2><br>
+                                    <p>Php 100.00 </p>
+                                    <p>8:00am - 5:00pm</p>
+                                    <p>(0-1 year old are free)</p>
+                                </div>
+                                <div class="box1">
+                                    <img class="iconp" src="img/overnight.png" alt="Coffee2" style="width: 150px;">
+                                    <h2><b> OVERNIGHT </b></h2><br>
+                                    <p>Php 150.00 </p>
+                                    <p>6:00pm - 6:00am</p>
+                                    <p>(0-1 year old are free)</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+
+                    
+                        <div class="image" data-name="room and cottages">
+                            <div class="resort"> <h1>ROOMS AND COTTAGES</h1>
+                                <p>"The perfect escape from reality."</p>
+                            </div>
+                            <br><br><br>
+                            <div class="Coffee2">
+                                <div class="box4">
+                                    <img class="iconp" src="img/room.png" alt="Coffee2" style="width: 150px;">
+                                    <h2><b> VICTORIA ROOM</b></h2>
+                                    <p>Php 6000.00 </p>
+                                    <p>(Good for 10pax)</p>
+                                    <p>8:00am - 5:00pm / 6:00pm - 6:00am</p>
+                                    <h5>INCLUSIONS:</h5>
+                                    <p>Air-Conditioned room</p>
+                                    <p>2 Queene size beds</p>
+                                    <p>Bamboo Sofa</p>
+                                    <p>Bathroom</p>
+                                    <p>Refrigerator</p>
+                                    <p>Balcony</p>
+                                    <p>Free use of griller</p>
+                                    <p>Use of Resort Facilities</p>
+                                    <p>Free Parking</p>
+                                </div>
+                                <div class="box4">
+                                    <img class="iconp" src="img/cottage.png" alt="Coffee2" style="width: 150px;">
+                                    <h2><b> OPEN COTTAGE </b></h2> <br><br><br><br><br><br>
+                                    <p>Free use of charcoal Griller </p><br><br><br><br>
+                                    <p> CK Cottage (10pax) Php 800.00</p>
+                                    <p> Hanes Cottage (15pax) Php 1,200.00</p>
+                                    <p> Hanes Cottage (20pax) Php 1,500.00</p>
+                                    <p> Soen Cottage (15pax) Php 1,200.00</p>
+                                    <p> La Senza Cottage (20pax) Php 1,500.00</p>
+                                    <p> La Senza Cottage (35pax) Php 2,000.00</p>
+                                    <p> Semi-Pavilion (60pax max) Php 5,000.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                  
+                    
+                        <div class="image" data-name="glamping and corkage">
+                            <div class="resort"> <h1>GLAMPING AND APPLIANCES</h1>
+                                <p>"Discover the essence of total relaxation."</p>
+                            </div>
+                            <br><br><br>
+                            <div class="Coffee2">
+                                <div class="box5">
+                                    <img class="iconp" src="img/glamping.png" alt="Coffee2" style="width: 150px;">
+                                    <h2><b> GLAMPING </b></h2><br> <br>
+                                    <p> Daytime </p>
+                                    <p> (8am-5pm Php 1,300.00)</p> <br><br>
+                                    <p> Overnight</p>
+                                    <p> (6pm-6am Php 1,500.00)</p>
+                                </div>
+                                <div class="box5">
+                                    <img class="iconp" src="img/appliances.png" alt="Coffee2" style="width: 150px;">
+                                    <h2><b> CORKAGE FEE </b></h2><br>
+                                    <p> Electric Appliances: </p><br>
+                                    <p> Rice Cooker Php 150.00</p>
+                                    <p> Electric Grill Php 200.00</p>
+                                    <p> Speaker Php 150.00</p>
+                                    <p> Electric Kettle Php 100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="preview-box">
+                    <div class="details">
+                        <span class="icon fas fa-times"></span>
+                    </div>
+                    
+                    <div class="image-box"><img src="" alt=""></div>
+                </div>
+                    <div class="shadow"></div>
+                
+                  <script src="js/about.js"></script>
+                
+            </div>
+    </body>
+</html>
