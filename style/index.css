@@ -225,7 +225,7 @@ nav img{
 
 @media(max-width: 414px max-height: 896px){
     .title h1{
-        font-size: 40px;
+        font-size: 30px;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #1b82e2 ;
     }
@@ -248,14 +248,14 @@ nav img{
         position: fixed;
         width: 100%;
         color: rgb(246, 237, 237);
-        top: 55%;
+        top: 30%;
         text-align: center;
     }
     nav img{
         position: absolute;
         margin: auto;
         width: 150px;
-        top: 300%;
+        top: 100%;
         left: 40%;
     }
     .slidernav{
@@ -266,8 +266,8 @@ nav img{
         align-items: center;
         transform: translateX(80px);
         margin-bottom: 12px;
-        margin-top: 20%;
-        max-width: 79%;
+        margin-top: 25%;
+        max-width: 78%;
     }
     @media(max-width: 999px){
     .title h1{
