@@ -223,7 +223,7 @@ nav img{
 }
 
 
-@media(max-width: 414px max-height: 896px){
+@media(max-width: 414px){
     .title h1{
         font-size: 30px;
         -webkit-text-stroke-width: 2px;
